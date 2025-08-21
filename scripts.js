@@ -751,10 +751,10 @@
 
             const texts = [
                 'Naturally Smart',
-                'Data-Driven', 
-                'Future-Ready',
-                'Intelligent',
-                'Innovative'
+                'Naturally Smart', 
+                'Naturally Smart',
+                'Naturally Smartt',
+                'Naturally Smart'
             ];
             
             this.components.typingEffect = new TypingEffect(typingElement, texts);
@@ -798,5 +798,6 @@
     if (typeof module !== 'undefined' && module.exports) {
         module.exports = { CatalystApp };
     }
+
 
 })();
