@@ -82,7 +82,48 @@
             
             <!-- Particle Container -->
             <div class="particles" id="particles"></div>
+
+<!-- Shape Formation Area -->
+            <div class="shape-formation" id="shape-formation">
+                <svg class="formed-shape" id="formed-shape" width="300" height="300" viewBox="0 0 300 300">
+                    <!-- Brain/Intelligence Shape -->
+                    <path d="M150 50 C120 50, 100 70, 100 100 C100 130, 120 150, 150 150 C180 150, 200 130, 200 100 C200 70, 180 50, 150 50 Z" 
+                          fill="none" 
+                          stroke="#FFD700" 
+                          stroke-width="3" 
+                          stroke-dasharray="5,5">
+                        <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+                    </path>
+                    
+                    <!-- Neural Network Connections -->
+                    <circle cx="130" cy="80" r="8" fill="#FFD700" opacity="0.8"/>
+                    <circle cx="170" cy="80" r="8" fill="#FFD700" opacity="0.8"/>
+                    <circle cx="150" cy="120" r="10" fill="#FFD700" opacity="0.9"/>
+                    <circle cx="120" cy="110" r="6" fill="#FFD700" opacity="0.7"/>
+                    <circle cx="180" cy="110" r="6" fill="#FFD700" opacity="0.7"/>
+                    
+                    <!-- Connecting Lines -->
+                    <line x1="130" y1="80" x2="150" y2="120" stroke="#FFD700" stroke-width="2" opacity="0.6"/>
+                    <line x1="170" y1="80" x2="150" y2="120" stroke="#FFD700" stroke-width="2" opacity="0.6"/>
+                    <line x1="120" y1="110" x2="150" y2="120" stroke="#FFD700" stroke-width="2" opacity="0.6"/>
+                    <line x1="180" y1="110" x2="150" y2="120" stroke="#FFD700" stroke-width="2" opacity="0.6"/>
+                    
+                    <!-- Company Initials in the center -->
+                    <text x="150" y="125" text-anchor="middle" fill="#FFD700" font-family="Poppins" font-weight="bold" font-size="14">C</text>
+                    
+                    <!-- Outer glow effect -->
+                    <circle cx="150" cy="100" r="80" fill="none" stroke="url(#glowGradient)" stroke-width="1" opacity="0.3"/>
+                    
+                    <defs>
+                        <radialGradient id="glowGradient">
+                            <stop offset="0%" stop-color="#FFD700" stop-opacity="0.8"/>
+                            <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+                        </radialGradient>
+                    </defs>
+                </svg>
+            </div>
             
+			
             <div class="container">
                 <div class="hero__content">
                    <!-- <h1 id="hero-title" class="hero__title">CATALYST</h1> -->
@@ -409,6 +450,7 @@
 </body>
 
 </html>
+
 
 
 
