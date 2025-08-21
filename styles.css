@@ -1015,6 +1015,8 @@ em {
 
 .about__image-container {
   position: relative;
+    margin-top: -90px;
+   transform: translateY(-50px); /* moves the whole container up */
 }
 
 .about__image {
@@ -1480,3 +1482,4 @@ em {
 * {
   -ms-overflow-style: none !important;
 }
+
